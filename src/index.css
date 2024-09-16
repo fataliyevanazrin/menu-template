@@ -33,6 +33,7 @@ button {
   background: #F59E0B;
   border: none;
   color: #fff;
+  text-transform: capitalize;
 }
 .menu {
   max-width: 1200px;
