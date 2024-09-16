@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Categories = ({categories}) => {
+const Categories = ({categories, filterItems}) => {
     return (
         <div className="buttons">
             {categories.map(category => {

@@ -10,6 +10,10 @@ const App = () => {
   const [meals, setMeals] = useState(menu);
   const [categories, setCategories] = useState(allCategories);
   const filterItems = (category) => {
+    if(category === 'all') {
+      setMeals(menu);
+      return;
+    }
     const newItems = menu.filter((item) =>
     item.category === category)
     setMeals(newItems);
