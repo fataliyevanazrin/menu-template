@@ -1,0 +1,93 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F8FAFC;
+}
+h1 {
+  font-family: Roboto sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.line {
+  width: 112px;
+  height: 4px;
+  background-color: #F59E0B;
+}
+
+button {
+  height: 27px;
+  padding: 6px 12px 6px 12px;
+  margin: 33px 9px 63px 9px;
+  border-radius: 4px;
+  background: #F59E0B;
+  border: none;
+  color: #fff;
+}
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 33px;
+}
+@media (min-width: 790px) {
+  .menu { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1210px) {
+  .menu { grid-template-columns: repeat(3, 1fr); }
+}
+.menu-card {
+  background: white;
+}
+.menu-card img{
+  min-width: 376px;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 22px 24px 24px;
+}
+
+.menu-card h3 {
+  font-family: Roboto sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.menu-card h4 {
+  width: 60px;
+  text-align: center;
+  padding: 4px 7.95px 4px 8px;
+  border-radius: 4px;
+  background: #F59E0B;
+  color: #fff;
+  margin: 0;
+}
+
+.menu-card p{
+  font-family: Roboto sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #64748B;
+  text-align: left;
+  margin: 24px 32px 20px 24px;
+  line-height: 1.8;
+}
+
